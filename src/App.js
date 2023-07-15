@@ -4,6 +4,8 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import PostJob from "./pages/PostJob";
 import NotFound from "./pages/NotFound";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -12,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hire-remotely" element={<PostJob />} />
-          <Route path="/sign-in" element={<PostJob />} />
-          <Route path="/sign-up" element={<PostJob />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
